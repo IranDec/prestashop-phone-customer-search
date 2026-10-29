@@ -1,0 +1,8 @@
+.DS_Store
+*.log
+*.sql
+*.sql.gz
+.env
+.env.*
+*.pem
+*.key
