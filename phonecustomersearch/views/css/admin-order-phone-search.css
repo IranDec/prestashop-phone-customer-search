@@ -1,0 +1,24 @@
+#phone-customer-search.pcs-panel {
+  margin: 16px 0;
+  padding: 16px;
+  border: 1px solid #dce3e9;
+  border-radius: 8px;
+  background: #f8fafc;
+  box-shadow: 0 2px 8px rgba(23, 43, 77, .06);
+}
+#phone-customer-search .pcs-heading { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; color: #253858; }
+#phone-customer-search .pcs-heading strong, #phone-customer-search .pcs-heading small { display: block; }
+#phone-customer-search .pcs-heading small, #phone-customer-search .pcs-hint { color: #6b7785; font-size: 12px; }
+#phone-customer-search .pcs-icon { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; background: #e6f6fa; color: #168ba4; font-size: 20px; }
+#phone-customer-search .pcs-input { min-height: 42px; border-radius: 6px; }
+#phone-customer-search .pcs-results { display: grid; gap: 8px; margin-top: 10px; }
+#phone-customer-search .pcs-customer, #phone-customer-search .pcs-message { width: 100%; padding: 11px 13px; border: 1px solid #e1e7ed; border-radius: 6px; background: #fff; text-align: right; }
+#phone-customer-search .pcs-customer { display: grid; gap: 3px; color: #253858; cursor: pointer; transition: border-color .15s, box-shadow .15s, transform .15s; }
+#phone-customer-search .pcs-customer:hover, #phone-customer-search .pcs-customer:focus { border-color: #20a4bd; box-shadow: 0 2px 8px rgba(32, 164, 189, .15); transform: translateY(-1px); outline: 0; }
+#phone-customer-search .pcs-phone { color: #168ba4; direction: ltr; text-align: right; font-weight: 600; }
+#phone-customer-search .pcs-customer small { color: #6b7785; direction: ltr; text-align: right; overflow-wrap: anywhere; }
+#phone-customer-search .pcs-message { color: #6b7785; }
+#phone-customer-search .pcs-loading::before { content: ''; display: inline-block; width: 12px; height: 12px; margin-left: 8px; border: 2px solid #c5e5eb; border-top-color: #168ba4; border-radius: 50%; vertical-align: -2px; animation: pcs-spin .7s linear infinite; }
+#phone-customer-search .pcs-success { border-color: #b7dfc5; color: #287d45; background: #f2fbf5; }
+#phone-customer-search .pcs-error { border-color: #f0c2c2; color: #a33; background: #fff7f7; }
+@keyframes pcs-spin { to { transform: rotate(360deg); } }
